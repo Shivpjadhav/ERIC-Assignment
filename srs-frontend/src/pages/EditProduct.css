@@ -1,0 +1,155 @@
+/* EditProduct Page Styles - Purple Theme */
+.edit-product-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #F8F4FF 0%, #F3E8FF 100%);
+}
+
+.edit-product-form-container {
+    max-width: 550px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(107, 70, 193, 0.1);
+    border: 1px solid rgba(159, 122, 234, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-product-form-container:hover {
+    box-shadow: 0 15px 50px rgba(107, 70, 193, 0.15);
+}
+
+.edit-product-form-container h2 {
+    color: #6B46C1;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.edit-product-form-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #9F7AEA, #D6BCFA);
+    border-radius: 2px;
+}
+
+.edit-product-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.edit-product-form-container input,
+.edit-product-form-container textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 2px solid #E9D8FD;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background: #FFFFFF;
+    color: #2D3748;
+    box-sizing: border-box;
+}
+
+.edit-product-form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.edit-product-form-container input:focus,
+.edit-product-form-container textarea:focus {
+    outline: none;
+    border-color: #9F7AEA;
+    box-shadow: 0 0 0 3px rgba(159, 122, 234, 0.1);
+}
+
+.edit-product-form-container input:hover,
+.edit-product-form-container textarea:hover {
+    border-color: #B794F4;
+}
+
+.edit-product-form-container input::placeholder,
+.edit-product-form-container textarea::placeholder {
+    color: #C4B5FD;
+    font-weight: 400;
+}
+
+.edit-product-form-container button {
+    background: linear-gradient(135deg, #9F7AEA 0%, #805AD5 100%);
+    color: white;
+    padding: 0.875rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.edit-product-form-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(159, 122, 234, 0.4);
+    background: linear-gradient(135deg, #B794F4 0%, #9F7AEA 100%);
+}
+
+.edit-product-form-container button:active {
+    transform: translateY(0);
+}
+
+/* Loading state styling (optional) */
+.edit-product-form-container.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .edit-product-form-container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .edit-product-form-container h2 {
+        font-size: 1.75rem;
+    }
+    
+    .edit-product-form-container input,
+    .edit-product-form-container textarea {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+    
+    .edit-product-form-container button {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Optional: Add animation for form appearance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.edit-product-form-container {
+    animation: fadeInUp 0.5s ease-out;
+}

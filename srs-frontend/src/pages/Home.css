@@ -1,0 +1,152 @@
+/* Home Page Styles - Purple Theme */
+.home-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #F8F4FF 0%, #F3E8FF 100%);
+}
+
+.home-content {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.home-header h1 {
+    color: #6B46C1;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.home-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #9F7AEA, #D6BCFA, #9F7AEA);
+    border-radius: 2px;
+}
+
+.product-count {
+    color: #805AD5;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.75rem;
+    padding: 1rem 0;
+}
+
+/* Loading state */
+.loading-state {
+    text-align: center;
+    padding: 4rem;
+    color: #9F7AEA;
+    font-size: 1.2rem;
+}
+
+.loading-state::after {
+    content: '...';
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 4rem;
+    background: white;
+    border-radius: 20px;
+    border: 2px dashed #D6BCFA;
+    margin: 2rem;
+}
+
+.empty-state p {
+    color: #805AD5;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.empty-state .emoji {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .home-content {
+        padding: 1rem;
+    }
+    
+    .home-header h1 {
+        font-size: 2rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1rem;
+    }
+    
+    .product-count {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .empty-state {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}
+
+/* Optional: Add scroll animation for products */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.products-grid > * {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Optional: Stagger animation delay for products */
+.products-grid > *:nth-child(1) { animation-delay: 0.05s; }
+.products-grid > *:nth-child(2) { animation-delay: 0.1s; }
+.products-grid > *:nth-child(3) { animation-delay: 0.15s; }
+.products-grid > *:nth-child(4) { animation-delay: 0.2s; }
+.products-grid > *:nth-child(5) { animation-delay: 0.25s; }
+.products-grid > *:nth-child(6) { animation-delay: 0.3s; }
