@@ -8,9 +8,12 @@
 
 ---
 🎥 Demo Video
-https://img.shields.io/badge/Watch_Demo_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white
 
-📹 Demo Video Available: Click here to view the demo video
+Repository Video Folder:
+
+https://github.com/Shivpjadhav/ERIC-Assignment/tree/main/video
+
+📹 Demo Video Included
 
 The demo video showcases:
 
@@ -24,9 +27,18 @@ The demo video showcases:
 
 ✅ Interactive controls (Joystick, Emergency Stop, Mode Switcher)
 
+✅ Mini Preview Window functionality
+
+✅ Zoom Controls
+
 ✅ Mobile responsiveness demonstration
 
-✅ All dashboard components in action
+✅ Complete UI walkthrough
+
+Video Location:
+ERIC-Assignment/video/demo.mp4
+
+
 # Project Overview
 
 This project is a frontend implementation of the ERIC Robotics Insight.IO Dashboard assignment.
