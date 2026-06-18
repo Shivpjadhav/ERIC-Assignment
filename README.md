@@ -7,7 +7,26 @@
 **Email ID:** [jadhavshivani332@gmail.com](mailto:jadhavshivani332@gmail.com)
 
 ---
+🎥 Demo Video
+https://img.shields.io/badge/Watch_Demo_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white
 
+📹 Demo Video Available: Click here to view the demo video
+
+The demo video showcases:
+
+✅ Dashboard loading and initialization
+
+✅ Camera View with live video feed
+
+✅ 3D Map View with point cloud visualization
+
+✅ Smooth view switching animations
+
+✅ Interactive controls (Joystick, Emergency Stop, Mode Switcher)
+
+✅ Mobile responsiveness demonstration
+
+✅ All dashboard components in action
 # Project Overview
 
 This project is a frontend implementation of the ERIC Robotics Insight.IO Dashboard assignment.
