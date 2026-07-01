@@ -3,7 +3,6 @@
 ## Candidate Information
 
 **Full Name:** Shivani Jadhav
-**Contact Number:** +91 7420855518
 **Email ID:** [jadhavshivani332@gmail.com](mailto:jadhavshivani332@gmail.com)
 
 ---
